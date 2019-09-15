@@ -26,6 +26,9 @@ h2, h4 {
 .banner {
   width: 100%;
   height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contact {
@@ -123,5 +126,49 @@ h2, h4 {
 .card-name {
   margin: 0 auto;
   font-size: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .lock {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+  .contact {
+    width: 110px;
+    text-align: center;
+  }
+  .num {
+    font-size: 30px;
+    margin-top: 15px;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .card {
+    margin: 10px auto;
+  }
+
+  .banner {
+    justify-content: flex-end;
+    height: 30vh;
+    margin-bottom: 20px;
+  }
+  .nav {
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+    background: black;
+    height: 100px;
+  }
+
 }
 
